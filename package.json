@@ -1,6 +1,6 @@
 {
   "name": "coin-wallet",
-  "version": "0.0.1",
+  "version": "0.0.3",
 	"engines": {
     "node": ">=8.9.3"
   },
@@ -11,7 +11,7 @@
 	],
 	"repository":{
 		"type": "git",
-		"url": "https://github.com/kws4679/cryptowallet"
+		"url": "https://github.com/kws4679/coin-wallet"
 	},
 	"main": "lib/cryptowallet.js",
 	"scripts": {
