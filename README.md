@@ -21,10 +21,11 @@ Will Support : BTC, ETH ...
 ### Generate Address
 
 ```javascript
-  const wallet = require('coin-wallet');
   const CURRENCY = 'XRP';    // BTC, ETH will support
+  const wallet = require('coin-wallet').getModule(CURRENCY);
+
   
-  wallet.generateAddress(CURRENCY)
+  wallet.generateAddress()
     .then(result => {
       console.log(result.address);
       console.log(result.secret);
@@ -34,10 +35,10 @@ Will Support : BTC, ETH ...
 ### Get Account Info
 
 ```javascript
-  const wallet = require('coin-wallet');
   const CURRENCY = 'XRP';    // BTC, ETH will support
+  const wallet = require('coin-wallet').getModule(CURRENCY);
   
-  wallet.getAccountInfo(CURRENCY, 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn')
+  wallet.getAccountInfo('rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn')
     .then(result => {
       console.log(result.address);
       console.log(result.secret);
@@ -47,10 +48,10 @@ Will Support : BTC, ETH ...
 ### Transfer
 
 ```javascript
-  const wallet = require('coin-wallet');
   const CURRENCY = 'XRP';    // BTC, ETH will support
+  const wallet = require('coin-wallet').getModule(CURRENCY);
   
-  wallet.transfer(CURRENCY, {
+  wallet.transfer({
     'senderAddress': 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn',
     'senderSecret': 'XXXXXX',
     'recieverAddress': 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn'
