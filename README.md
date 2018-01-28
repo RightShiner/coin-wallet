@@ -53,7 +53,7 @@ Will Support : BTC, ETH ...
   wallet.transfer({
     'senderAddress': 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn',
     'senderSecret': 'XXXXXX',
-    'recieverAddress': 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn'
+    'receiverAddress': 'rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn'
     'amount': 1000
   }).then(result => {
       console.log(result.id);

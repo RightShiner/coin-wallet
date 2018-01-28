@@ -62,7 +62,7 @@ describe('transfer', function(){
   const TRANSFER_INFO = {
     'senderAddress' : TEST_ACCOUNT1.address,
     'senderSecret' : TEST_ACCOUNT1.secret,
-    'recieverAddress' : TEST_ACCOUNT2.address,
+    'receiverAddress' : TEST_ACCOUNT2.address,
     'amount' : 0.01
   }
   it('can transfer', function(done){
@@ -119,9 +119,9 @@ describe('transfer', function(){
     });
   });
 
-  it('throw error with malformed reciever address', function(done) {
+  it('throw error with malformed receiver address', function(done) {
     var info = deepClone(TRANSFER_INFO);
-    info.recieverAddress = '';
+    info.receiverAddress = '';
     sut.transfer(info).then(result => {
       return done("Shouldn't be here");
     }).catch(e => {
@@ -153,13 +153,13 @@ describe('transfer', function(){
 //   const TRANSFER_INFO1 = {
 //     'senderAddress' : TEST_ACCOUNT1.address,
 //     'senderSecret' : TEST_ACCOUNT1.secret,
-//     'recieverAddress' : TEST_ACCOUNT2.address,
+//     'receiverAddress' : TEST_ACCOUNT2.address,
 //     'amount' : 0.01
 //   }
 //   const TRANSFER_INFO2 = {
 //     'senderAddress' : TEST_ACCOUNT1.address,
 //     'senderSecret' : TEST_ACCOUNT1.secret,
-//     'recieverAddress' : TEST_ACCOUNT3.address,
+//     'receiverAddress' : TEST_ACCOUNT3.address,
 //     'amount' : 0.02
 //   }
 //   const TRANSFER_INFOS = [TRANSFER_INFO1, TRANSFER_INFO2];
