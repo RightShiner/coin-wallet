@@ -61,7 +61,7 @@ describe('transfer', function(){
   // send 0.01 XRP from account1 to account2 test
   const TRANSFER_INFO = {
     'senderAddress' : TEST_ACCOUNT1.address,
-    'senderSecretKey' : TEST_ACCOUNT1.secret,
+    'senderSecret' : TEST_ACCOUNT1.secret,
     'recieverAddress' : TEST_ACCOUNT2.address,
     'amount' : 0.01
   }
@@ -152,13 +152,13 @@ describe('transfer', function(){
 //   // send 0.02 XRP from account1 to account3
 //   const TRANSFER_INFO1 = {
 //     'senderAddress' : TEST_ACCOUNT1.address,
-//     'senderSecretKey' : TEST_ACCOUNT1.secret,
+//     'senderSecret' : TEST_ACCOUNT1.secret,
 //     'recieverAddress' : TEST_ACCOUNT2.address,
 //     'amount' : 0.01
 //   }
 //   const TRANSFER_INFO2 = {
 //     'senderAddress' : TEST_ACCOUNT1.address,
-//     'senderSecretKey' : TEST_ACCOUNT1.secret,
+//     'senderSecret' : TEST_ACCOUNT1.secret,
 //     'recieverAddress' : TEST_ACCOUNT3.address,
 //     'amount' : 0.02
 //   }
