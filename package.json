@@ -1,32 +1,37 @@
 {
   "name": "coin-wallet",
   "version": "0.0.3",
-	"engines": {
+  "engines": {
     "node": ">=8.9.3"
   },
-	"description": "Node.js multiple crypto currencies wallet interface such as create account, deposit and withdraw",
-	"author": { "name":"kws", "email":"kws4679@naver.com", "url":"https://foliums.io"},
-	"contributors": [
-
-	],
-	"repository":{
-		"type": "git",
-		"url": "https://github.com/kws4679/coin-wallet"
-	},
-	"main": "lib/cryptowallet.js",
-	"scripts": {
-    "test": "./node_modules/mocha/bin/mocha --recursive test/"
+  "description": "Node.js multiple crypto currencies wallet interface such as create account, deposit and withdraw",
+  "author": {
+    "name": "kws",
+    "email": "kws4679@naver.com",
+    "url": "https://foliums.io"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kws4679/coin-wallet"
+  },
+  "main": "lib/coin-wallet.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive --timeout 15000ms tests/"
   },
   "dependencies": {
-
+    "ripple-lib": "^0.17.9"
   },
   "devDependencies": {
+    "eslint": "^4.16.0",
+    "mocha": "^2.5.3",
     "proxyquire": "^1.7.11",
-    "supertest": "^3.0.0",
-    "mocha": "^2.3.4"
+    "supertest": "^3.0.0"
   },
-	"licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT"
-  } ]
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ]
 }
