@@ -40,8 +40,7 @@ Will Support : BTC, ETH ...
   
   wallet.getAccountInfo('rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn')
     .then(result => {
-      console.log(result.address);
-      console.log(result.secret);
+      console.log(result.balance);
     }).catch(console.error)
 ```
 
