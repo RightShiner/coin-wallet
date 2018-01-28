@@ -60,5 +60,5 @@ Will Support : BTC, ETH ...
       console.log(result.id);
       console.log(result.fee);
       console.log(result.timestamp);
-    }).catch(console.error)
+  }).catch(console.error)
 ```
